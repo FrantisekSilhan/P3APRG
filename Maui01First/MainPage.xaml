@@ -4,10 +4,16 @@
              x:Class="Maui01First.MainPage">
 
     <ScrollView>
-        <StackLayout Orientation="Horizontal" HeightRequest="200">
-            <Button Text="-" x:Name="btnDown" Clicked="btnDown_Clicked"/>
-            <Label Text="0" x:Name="lblCounter" />
-            <Button Text="+" x:Name="btnUp" Clicked="btnUp_Clicked"/>
+        <StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center">
+            <Label Text="0" x:Name="lblCounter" Margin="10" HorizontalTextAlignment="Center" FontSize="Large"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+                <Button Text="-" x:Name="btnDown" Clicked="btnDown_Clicked"/>
+                <Button Text="+" x:Name="btnUp" Clicked="btnUp_Clicked"/>
+                <Button Text="0" x:Name="btnSet0" Clicked="btnSet_Clicked"/>
+                <Button Text="1" x:Name="btnSet1" Clicked="btnSet_Clicked"/>
+                <Button Text="10" x:Name="btnSet10" Clicked="btnSet_Clicked"/>
+                <Button Text="100" x:Name="btnSet100" Clicked="btnSet_Clicked"/>
+            </StackLayout>
         </StackLayout>
     </ScrollView>
 
