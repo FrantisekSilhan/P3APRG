@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CS01EFC", "CS01EFC\CS01EFC.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CS02SQLite", "CS02SQLite\CS02SQLite.csproj", "{AFBBCA2A-9072-4FB5-A674-9C7E49DF691E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maui01First", "Maui01First\Maui01First.csproj", "{BFB1F753-F5B0-4F57-940D-9B71166F5081}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maui01First", "Maui01First\Maui01First.csproj", "{BFB1F753-F5B0-4F57-940D-9B71166F5081}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maui02Layout", "Maui02Layout\Maui02Layout.csproj", "{995E9702-5A92-43E3-8219-2442C75B630E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,12 @@ Global
 		{BFB1F753-F5B0-4F57-940D-9B71166F5081}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFB1F753-F5B0-4F57-940D-9B71166F5081}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BFB1F753-F5B0-4F57-940D-9B71166F5081}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{995E9702-5A92-43E3-8219-2442C75B630E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{995E9702-5A92-43E3-8219-2442C75B630E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{995E9702-5A92-43E3-8219-2442C75B630E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{995E9702-5A92-43E3-8219-2442C75B630E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{995E9702-5A92-43E3-8219-2442C75B630E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{995E9702-5A92-43E3-8219-2442C75B630E}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
