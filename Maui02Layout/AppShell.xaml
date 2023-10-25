@@ -7,6 +7,21 @@
     xmlns:pages="clr-namespace:Maui02Layout.Pages"
     Shell.FlyoutBehavior="Flyout">
 
+    <TabBar FlyoutDisplayOptions="AsMultipleItems">
+        <Tab Title="Grid">
+            <ShellContent 
+                Title="Grid layout item" 
+                ContentTemplate="{DataTemplate pages:GridPage}"
+            />
+        </Tab>
+        <Tab Title="Stack">
+            <ShellContent 
+                Title="Stack layout item" 
+                ContentTemplate="{DataTemplate pages:StackPage}"
+            />
+        </Tab>
+    </TabBar>
+
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
@@ -27,6 +42,10 @@
     <ShellContent
         Title="Absolute layout item"
         ContentTemplate="{DataTemplate pages:AbsolutePage}"
+    />
+    <ShellContent
+        Title="Uniform grid"
+        ContentTemplate="{DataTemplate pages:UniformPage}"
     />
 
 </Shell>
