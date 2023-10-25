@@ -5,11 +5,28 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Maui02Layout"
     xmlns:pages="clr-namespace:Maui02Layout.Pages"
-    Shell.FlyoutBehavior="Disabled">
+    Shell.FlyoutBehavior="Flyout">
 
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Route="MainPage"
+     />
+    <ShellContent
+        Title="Stack layout item"
+        ContentTemplate="{DataTemplate pages:StackPage}"
+    />
+    <ShellContent
+        Title="Grid layout item"
+        ContentTemplate="{DataTemplate pages:GridPage}"
+    />
+    <ShellContent
+        Title="Flex layout item"
+        ContentTemplate="{DataTemplate pages:FlexPage}"
+    />
+    <ShellContent
+        Title="Absolute layout item"
+        ContentTemplate="{DataTemplate pages:AbsolutePage}"
+    />
 
 </Shell>
