@@ -11,7 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CS02SQLite", "CS02SQLite\CS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maui01First", "Maui01First\Maui01First.csproj", "{BFB1F753-F5B0-4F57-940D-9B71166F5081}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maui02Layout", "Maui02Layout\Maui02Layout.csproj", "{995E9702-5A92-43E3-8219-2442C75B630E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maui02Layout", "Maui02Layout\Maui02Layout.csproj", "{995E9702-5A92-43E3-8219-2442C75B630E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maui03Components", "Maui03Components\Maui03Components.csproj", "{26E153CE-ADBC-4472-9B74-25CAFD2CDC0B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maui04Resources", "Maui04Resources\Maui04Resources.csproj", "{52AF1A31-3214-4607-B74F-80FD421450E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maui05Binding", "Maui05Binding\Maui05Binding.csproj", "{0600ABFC-653D-4183-AA7E-B56DEBE6EE7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +49,24 @@ Global
 		{995E9702-5A92-43E3-8219-2442C75B630E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{995E9702-5A92-43E3-8219-2442C75B630E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{995E9702-5A92-43E3-8219-2442C75B630E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{26E153CE-ADBC-4472-9B74-25CAFD2CDC0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26E153CE-ADBC-4472-9B74-25CAFD2CDC0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26E153CE-ADBC-4472-9B74-25CAFD2CDC0B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{26E153CE-ADBC-4472-9B74-25CAFD2CDC0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26E153CE-ADBC-4472-9B74-25CAFD2CDC0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26E153CE-ADBC-4472-9B74-25CAFD2CDC0B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{52AF1A31-3214-4607-B74F-80FD421450E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52AF1A31-3214-4607-B74F-80FD421450E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52AF1A31-3214-4607-B74F-80FD421450E2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{52AF1A31-3214-4607-B74F-80FD421450E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52AF1A31-3214-4607-B74F-80FD421450E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52AF1A31-3214-4607-B74F-80FD421450E2}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{0600ABFC-653D-4183-AA7E-B56DEBE6EE7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0600ABFC-653D-4183-AA7E-B56DEBE6EE7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0600ABFC-653D-4183-AA7E-B56DEBE6EE7B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0600ABFC-653D-4183-AA7E-B56DEBE6EE7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0600ABFC-653D-4183-AA7E-B56DEBE6EE7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0600ABFC-653D-4183-AA7E-B56DEBE6EE7B}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

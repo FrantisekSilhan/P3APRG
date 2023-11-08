@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:Maui05Binding.Models"
+             x:Class="Maui05Binding.MainPage">
+    <ContentPage.Resources>
+        <models:Person x:Key="Adam" FirstName="Adam" Age="18" />
+    </ContentPage.Resources>
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+            <Frame>
+            <HorizontalStackLayout>
+                <Slider Minimum="0" Maximum="100" x:Name="sliValue" ValueChanged="sliValue_ValueChanged" WidthRequest="200" />
+                <Label Text="0" x:Name="lblValue" />
+            </HorizontalStackLayout>
+            </Frame>
+            <Frame>
+                <HorizontalStackLayout>
+                    <Slider Minimum="0" Maximum="100" x:Name="sliValue2" WidthRequest="200" />
+                    <Label Text="{Binding Source={x:Reference sliValue2}, Path=Value}" />
+                </HorizontalStackLayout>
+            </Frame>
+            <Frame>
+                <HorizontalStackLayout>
+                    <Entry x:Name="entSource" />
+                    <Entry Text="{Binding Source={x:Reference entSource}, Path=Text, Mode=TwoWay}" />
+                </HorizontalStackLayout>
+            </Frame>
+            <Frame>
+                <VerticalStackLayout>
+                    <Label Text="{Binding Source={StaticResource Adam}, Path=FirstName}" />
+                    <Label Text="{Binding Source={StaticResource Adam}, Path=Age}" />
+                    <Entry Text="{Binding Source={StaticResource Adam}, Path=FirstName}" />
+                </VerticalStackLayout>
+            </Frame>
+            <Frame>
+                <VerticalStackLayout>
+                    <Label Text="" x:Name="lblPersonName" />
+                    <Label Text="" x:Name="lblPersonAge" />
+                    <Entry Text="" x:Name="entPersonName" />
+                </VerticalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
