@@ -5,6 +5,9 @@
              xmlns:vm="clr-namespace:Maui06MVVM.ViewModels"
              xmlns:cnvrt="clr-namespace:Maui06MVVM.Converters"
              Title="ColorsPage">
+    <ContentPage.Resources>
+        <cnvrt:ColorToHexString x:Key="cthex" />
+    </ContentPage.Resources>
     <VerticalStackLayout>
         <Frame>
             <Frame.BindingContext>
@@ -23,7 +26,7 @@
                 <Label Text="{Binding Blue}" />
                 <Slider Value="{Binding Blue}" Maximum="255" Minimum="0" />
                 <Border HeightRequest="20" BackgroundColor="{Binding Color}" />
-                <Label Text="{Binding Color}" />
+                <Label Text="{Binding Color, Converter={StaticResource cthex}}" />
                 <Label Text="{Binding Brightness}" />
                 <Label Text="{Binding Luminance}" />
             </VerticalStackLayout>

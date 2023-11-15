@@ -6,9 +6,4 @@ public partial class ColorsPage : ContentPage
     {
         InitializeComponent();
     }
-
-    private void sliValue_ValueChanged(object sender, ValueChangedEventArgs e)
-    {
-
-    }
 }
