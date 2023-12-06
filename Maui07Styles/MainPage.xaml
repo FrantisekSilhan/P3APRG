@@ -2,7 +2,11 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Maui07Styles.MainPage">
-
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontFamily" Value="Algerian" />
+        </Style>
+    </ContentPage.Resources>
     <ScrollView>
         <VerticalStackLayout
             Spacing="25"
@@ -34,6 +38,16 @@
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
+
+            <Button
+                Text="Click me"
+                HorizontalOptions="Center"
+                Style="{StaticResource successButton}" />
+            
+            <Button
+                Text="Click me"
+                HorizontalOptions="Center"
+                Style="{StaticResource dangerButton}" />
 
         </VerticalStackLayout>
     </ScrollView>

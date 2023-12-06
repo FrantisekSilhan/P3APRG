@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maui04Resources", "Maui04Re
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maui05Binding", "Maui05Binding\Maui05Binding.csproj", "{0600ABFC-653D-4183-AA7E-B56DEBE6EE7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maui06MVVM", "Maui06MVVM\Maui06MVVM.csproj", "{B5652A16-7E70-4E07-AB8E-AF3922C2C067}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maui06MVVM", "Maui06MVVM\Maui06MVVM.csproj", "{B5652A16-7E70-4E07-AB8E-AF3922C2C067}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maui07Styles", "Maui07Styles\Maui07Styles.csproj", "{E73BF777-EE78-45C0-BC41-AB2390D80498}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,12 @@ Global
 		{B5652A16-7E70-4E07-AB8E-AF3922C2C067}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5652A16-7E70-4E07-AB8E-AF3922C2C067}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B5652A16-7E70-4E07-AB8E-AF3922C2C067}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E73BF777-EE78-45C0-BC41-AB2390D80498}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E73BF777-EE78-45C0-BC41-AB2390D80498}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E73BF777-EE78-45C0-BC41-AB2390D80498}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E73BF777-EE78-45C0-BC41-AB2390D80498}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E73BF777-EE78-45C0-BC41-AB2390D80498}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E73BF777-EE78-45C0-BC41-AB2390D80498}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
