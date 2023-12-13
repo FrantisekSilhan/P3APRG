@@ -11,7 +11,7 @@
             </HorizontalStackLayout>
             <Button Text="FFFFFF" Command="{Binding CreateCommand}" />
             <Label Text="{Binding X}" />
-            <ListView ItemsSource="{Binding Items}" SelectedItem="{Binding Selected}" x:Name="lstList">
+            <ListView ItemsSource="{Binding Items}" SelectedItem="{Binding Selected}" x:Name="lstList" ItemSelected="lstList_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

@@ -23,6 +23,15 @@ namespace Maui08Collections.Views
             }
             Shell.Current.GoToAsync(nameof(DetailPage), true, new Dictionary<string, object> { ["Item"] = selectedItem });
         }
+        private void lstList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var selectedItem = e.SelectedItem as ShoppingItem;
+            if (selectedItem == null)
+            {
+                return;
+            }
+            Shell.Current.GoToAsync(nameof(DetailPage), true, new Dictionary<string, object> { ["Item"] = selectedItem });
+        }
     }
 
 }
