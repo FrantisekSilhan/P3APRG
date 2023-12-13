@@ -5,9 +5,13 @@
 
     <ScrollView>
         <VerticalStackLayout>
-            <Button Text="Create" x:Name="btnCreate" Clicked="btnCreate_Clicked" />
-            <Button Text="Detail" x:Name="btnDetail" Clicked="btnDetail_Clicked" />
+            <HorizontalStackLayout>
+                <Button Text="Create" x:Name="btnCreate" Clicked="btnCreate_Clicked" />
+                <Button Text="Detail" x:Name="btnDetail" Clicked="btnDetail_Clicked" />
+            </HorizontalStackLayout>
+            <Button Text="FFFFFF" Command="{Binding CreateCommand}" />
             <Label Text="{Binding X}" />
+            <ListView ItemsSource="{Binding Items}" />
         </VerticalStackLayout>
     </ScrollView>
 
