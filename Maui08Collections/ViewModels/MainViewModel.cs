@@ -63,8 +63,8 @@ namespace Maui08Collections.ViewModels
         }
         public MainViewModel()
         {
-            Items.Add(new ShoppingItem { Id = 0, Name = "Borůvky" });
-            Items.Add(new ShoppingItem { Id = 1, Name = "Chléb" });
+            Items.Add(new ShoppingItem { Id = 0, Name = "Borůvky", Amount = 15 });
+            Items.Add(new ShoppingItem { Id = 1, Name = "Chléb", Amount = 1 });
             X = Random.Shared.Next();
             CreateCommand = new Command(
             () =>

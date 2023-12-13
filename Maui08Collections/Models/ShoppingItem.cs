@@ -7,7 +7,7 @@ namespace Maui08Collections.Models
     {
         private int _id;
         private string _name;
-        private int _amount = 1;
+        private int _amount;
         private bool _obtained;
         public int Id
         {
