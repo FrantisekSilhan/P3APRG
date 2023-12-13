@@ -7,8 +7,10 @@ namespace Maui08Collections.ViewModels
 {
     public class MainViewModel : INotifyPropertyChanged
     {
-        private ObservableCollection<ShoppingItem> _items;
+        private ObservableCollection<ShoppingItem> _items = new ObservableCollection<ShoppingItem>();
         private int _x;
+        private ShoppingItem _item = new ShoppingItem();
+        private ShoppingItem _selected = new ShoppingItem();
         public ObservableCollection<ShoppingItem> Items
         {
             get
@@ -35,16 +37,40 @@ namespace Maui08Collections.ViewModels
         }
         public Command CreateCommand { get; set; }
 
+        public ShoppingItem Item
+        {
+            get
+            {
+                return _item;
+            }
+            set
+            {
+                _item = value;
+                OnPropertyChanged();
+            }
+        }
+        public ShoppingItem Selected
+        {
+            get
+            {
+                return _selected;
+            }
+            set
+            {
+                _selected = value;
+                OnPropertyChanged();
+            }
+        }
         public MainViewModel()
         {
-            Items = new ObservableCollection<ShoppingItem>();
-            Items.Add(new ShoppingItem { Id = 1, Name = "Borůvky" });
-            Items.Add(new ShoppingItem { Id = 2, Name = "Chléb" });
+            Items.Add(new ShoppingItem { Id = 0, Name = "Borůvky" });
+            Items.Add(new ShoppingItem { Id = 1, Name = "Chléb" });
             X = Random.Shared.Next();
             CreateCommand = new Command(
             () =>
             {
-                Items.Add(new ShoppingItem { Id = 1, Name = "Mléko" });
+                Items.Add(new ShoppingItem { Id = Items.Count, Name = Item.Name, Amount = Item.Amount, Obtained = Item.Obtained });
+                Item = new ShoppingItem();
             },
             () =>
             {

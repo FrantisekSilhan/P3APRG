@@ -1,5 +1,7 @@
 namespace Maui08Collections.Views;
 
+[QueryProperty("Item", "Item")]
+
 public partial class DetailPage : ContentPage
 {
     public DetailPage()

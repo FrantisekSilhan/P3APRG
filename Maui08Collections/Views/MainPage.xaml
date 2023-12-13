@@ -11,7 +11,24 @@
             </HorizontalStackLayout>
             <Button Text="FFFFFF" Command="{Binding CreateCommand}" />
             <Label Text="{Binding X}" />
-            <ListView ItemsSource="{Binding Items}" />
+            <ListView ItemsSource="{Binding Items}" SelectedItem="{Binding Selected}" x:Name="lstList">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="auto" />
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text="{Binding Amount}" Padding="3" />
+                                <Label Grid.Column="1" Text="{Binding Name}" Padding="3" />
+                                <Label Grid.Column="2" Text="{Binding Obtained}" Padding="3" />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </VerticalStackLayout>
     </ScrollView>
 

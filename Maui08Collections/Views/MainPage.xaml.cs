@@ -1,4 +1,6 @@
-﻿namespace Maui08Collections.Views
+﻿using Maui08Collections.Models;
+
+namespace Maui08Collections.Views
 {
     public partial class MainPage : ContentPage
     {
@@ -14,7 +16,12 @@
         }
         private void btnDetail_Clicked(object sender, EventArgs e)
         {
-            Shell.Current.GoToAsync(nameof(DetailPage), true, new Dictionary<string, object> { });
+            var selectedItem = lstList.SelectedItem as ShoppingItem;
+            if (selectedItem == null)
+            {
+                return;
+            }
+            Shell.Current.GoToAsync(nameof(DetailPage), true, new Dictionary<string, object> { ["Item"] = selectedItem });
         }
     }
 
